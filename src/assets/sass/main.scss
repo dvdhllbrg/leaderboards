@@ -1,0 +1,77 @@
+@import 'node_modules/materialize-css/sass/components/color';
+$primary-color: color("grey", "lighten-4") !default;
+$roboto-font-path: 'assets/fonts/roboto/';
+@import 'node_modules/materialize-css/sass/materialize.scss';
+
+.flip-list-move {
+	transition: transform 1s;
+}
+
+body {
+	background: url('assets/img/background.jpg') no-repeat center center fixed;
+	font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 100;
+}
+
+#app {
+	.card.horizontal {
+		.card-image {
+			max-width: 20%;
+
+			img {
+				min-height: 100%;
+			}
+		}
+
+		.card-content {
+			padding-bottom: 0;
+			padding-top: 1em;
+		}
+	}
+
+	.so-rating {
+
+		.total {
+			font-size: 1.5em;
+			font-weight: 100;
+			vertical-align: middle;
+		}
+
+		.change {
+			font-size: 1em;
+		    padding: 0.2em 0.4em;
+		    vertical-align: middle;
+		    border-radius: 5%;
+		}
+
+		.so-badge {
+			font-size: 1em;
+			padding: 0.2em 0.4em;
+			margin: 0.1em 0;
+			border-radius: 20%;
+			display: inline-block;
+
+			&.bronze {
+				background: #d1a684;
+			}
+			&.silver {
+				background: #b4b8bc;
+			}
+			&.gold {
+				background: #ffcc01;
+			}
+		}
+	}
+
+	.number {
+		font-size: 1.5em;
+		font-weight: 100;
+	}
+
+	.label {
+		display: block;
+	}
+}
